@@ -1,0 +1,35 @@
+Desafio 1 com IF, Elif, Else
+
+# Criar um programa que dependendo da temperadura (em graus) da carne ele retorna o ponto de cozimento.
+
+# O Usuário deverá fornecer a temperatura.
+
+# Temperaturas - Cozimento
+
+# 48º C - Rare (Selada)
+# 54º C - Medium rare (Ao ponto para o mal)
+# 60º C - Medium (Ao ponto)
+# 65º C - Medium well (Ao ponto para o bem)
+# 71º C - Bem passada
+
+temp = int(input('Qual é a Temperatura da Carne? '))
+
+if temp < 48:
+    print('Cozinhar por mais alguns minutos')
+else:
+    if temp == 48:
+        print('Selada')
+    else:
+        if temp > 48 and temp <= 54:
+            print('Ao Ponto para o mal')
+        else:
+            if temp >54 and temp <= 60:
+                print('Ao Ponto')
+            else:
+                if temp > 60 and temp <=65:
+                    print('Ao ponto para o Bem')
+                else:
+                    if temp < 65 and temp <= 71:
+                        print('Bem passada')
+                    else:
+                        print('A carne vai queimar')
